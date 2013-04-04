@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles/css/combined.css">
+	<title>Video Chat</title>
+</head>
+<body>
+	<article class="chat-widget">
+		<section>
+			<canvas id="other" width="640" height="480"></canvas>
+			<video id="me" width="160" height="120" autoplay></video>
+		</section>
+	</article>
+	
+	<script src="js/lib/underscore.js"></script>
+	<script src="js/lib/canvas-toBlob.js"></script>
+	<script async src="js/videochat.js"></script>
+
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
